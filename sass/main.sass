@@ -4,6 +4,7 @@ $regular: 'Open Sans Condensed', sans-serif;
 *
 	padding: 0
 	margin: 0
+	box-sizing: border-box
 
 a
 	text-decoration: none
@@ -14,44 +15,35 @@ li
 html
 	background-color: #EDEEF0
 
-body
-	position: relative
-	left: 0
-	right: 0
-	bottom: 0
-	top: 0
-	margin: auto
-	width: 45%
-	height: 95%
+.container
+	max-width: 850px
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	flex-wrap: wrap
+	height: 100%
 	background-color: #fff
-	padding: 20px
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1)
 
-.left-side
-	position: absolute
-	left: 0
-	width: 30%
-	background-color: #fff
-	height: 100vh
-
-.right-side
-	position: absolute
-	left: 30%
-	width: 70%
-	background-color: #fff
-	height: 100vh
+.header
+	flex-basis: 100%
 
 .line1
-	display: block
-	position: absolute
-	left: 0
-	right: 0
-	bottom: 0
-	top: 0
 	width: 100%
 	height: 10px
 	background-color: $accent;
 
-.about
+.left-side
+	flex-basis: 30%
+	padding-left: 20px
+
+.right-side
+	position: relative
+	flex-basis: 70%
+	padding-right: 20px
+
+.header
 	font-family: $regular
 	&_name
 		font-size: 35px
@@ -65,18 +57,11 @@ body
 		width: 150px
 		height: 150px
 		border-radius: 50%
-	&_oreol
-		position: absolute
-		content: ''
-		position: absolute
-		display: block
-		width: 159px
-		height: 159px
-		border-radius: 50%
-		background-color: #fff
-		border: 3px solid $accent
-		left: 127px
-		top: 23px
+		background: url('/img/photo.jpg') no-repeat 50% 50%
+		background-size: cover
+		z-index: 3
+		border: 4px solid #fff
+		box-shadow: 0 0 0 4px $accent
 	&_cnr
 		display: flex
 		align-items: center
@@ -88,41 +73,10 @@ body
 	margin: auto
 	margin-top: 10px
 	margin-bottom: 15px 
-	width: 85%
+	width: 95%
 	height: 3px
 	background-color: #999;
 	opacity: .5
-
-.contacts
-	&_list
-		display: flex
-		flex-direction: column
-		&-item
-			display: flex
-			margin-top: 5px
-			i
-				color: $accent
-				padding-top: 3px
-	&_title
-		font-size: 23px
-		margin: 10px 0
-		font-family: $regular
-		text-transform: uppercase
-	&_city,
-	&_phone,
-	&_email,
-	&_github,
-		font-family: $regular
-		font-size: 17px
-		color: #333
-		padding-left: 8px
-
-.skills
-	&_title
-		font-size: 23px
-		margin: 10px 0
-		font-family: $regular
-		text-transform: uppercase
 
 .edu
 	margin-bottom: 30px
@@ -190,6 +144,10 @@ body
 					left: 40px
 			&-line2
 				top: 260px
+				&:before
+					content: '2010'
+				&:after
+					content: '2014'
 		&_list
 			&-item
 				font-family: $regular
@@ -269,7 +227,85 @@ body
 		&-item
 		font-family: $regular
 		font-size: 17px
-		color: #333;
+		color: #333
 		padding: 0 0 3px 10px
 
-	
+
+.contacts
+	&_list
+		display: flex
+		flex-direction: column
+		&-item
+			display: flex
+			margin-top: 5px
+			i
+				color: $accent
+				padding-top: 3px
+	&_title
+		font-size: 21px
+		margin: 10px 0
+		font-family: $regular
+		text-transform: uppercase
+	&_city,
+	&_phone,
+	&_email,
+	&_github,
+		font-family: $regular
+		font-size: 17px
+		color: #333
+		padding-left: 8px
+
+.about
+	&_title
+		font-size: 21px
+		margin: 10px 0
+		font-family: $regular
+		text-transform: uppercase
+	&_age, &_obj
+		font-family: $regular
+		font-size: 17px
+		color: #333
+	&_age
+		margin-bottom: 5px
+
+.skills
+	&_title
+		font-size: 23px
+		margin: 10px 0
+		font-family: $regular
+		text-transform: uppercase
+	&_slash
+		color: $accent
+		font-weight: bold
+		font-size: 18px
+		padding-right: 5px
+	&_list
+		&-item
+			font-family: $regular
+			font-size: 17px
+			color: #333
+
+.courses
+	&_title
+		font-size: 21px
+		margin: 10px 0
+		font-family: $regular
+		text-transform: uppercase
+	&_slash
+		color: $accent
+		font-weight: bold
+		font-size: 18px
+		padding-right: 5px
+	&_card
+		&-title
+			font-size: 17px
+			margin: 10px 0 5px 0
+			font-family: $regular
+			text-transform: uppercase
+			font-weight: bold
+		&-course, &-date
+			font-size: 17px
+			font-family: $regular
+			padding-left: 15px
+
+
