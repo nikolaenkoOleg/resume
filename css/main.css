@@ -81,7 +81,7 @@ html {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: url("https://github.com/nikolaenkoOleg/resume/blob/master/img/photo.jpg") no-repeat 50% 50%;
+  background: url("/img/photo.jpg") no-repeat 50% 50%;
   background-size: cover;
   z-index: 3;
   border: 4px solid #fff;
@@ -309,6 +309,13 @@ html {
   padding: 0 0 3px 10px;
 }
 
+.contacts_title {
+  font-size: 21px;
+  margin: 10px 0;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
 .contacts_list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,13 +336,6 @@ html {
 .contacts_list-item i {
   color: #264EA6;
   padding-top: 3px;
-}
-
-.contacts_title {
-  font-size: 21px;
-  margin: 10px 0;
-  font-family: "Open Sans Condensed", sans-serif;
-  text-transform: uppercase;
 }
 
 .contacts_city, .contacts_phone, .contacts_email, .contacts_github {
@@ -383,7 +383,7 @@ html {
 }
 
 .courses_title {
-  font-size: 21px;
+  font-size: 23px;
   margin: 10px 0;
   font-family: "Open Sans Condensed", sans-serif;
   text-transform: uppercase;
@@ -408,5 +408,74 @@ html {
   font-size: 17px;
   font-family: "Open Sans Condensed", sans-serif;
   padding-left: 15px;
+}
+
+@media screen and (max-width: 320px) {
+  .left-side {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .right-side {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-right: 0;
+  }
+  .header_name {
+    font-size: 25px;
+  }
+  .header_photo {
+    width: 100px;
+    height: 100px;
+  }
+  .header_position {
+    font-size: 20px;
+  }
+  .contacts_title {
+    font-size: 22px;
+  }
+  .contacts_city, .contacts_phone, .contacts_email, .contacts_github {
+    font-size: 19px;
+  }
+  .about_title {
+    font-size: 22px;
+  }
+  .about_age, .about_obj {
+    font-size: 19px;
+  }
+  .skills_title {
+    font-size: 22px;
+  }
+  .skills_list-item {
+    font-size: 19px;
+  }
+  .courses {
+    margin-bottom: 40px;
+  }
+  .courses_title {
+    font-size: 22px;
+  }
+  .courses_card-title {
+    font-size: 18px;
+  }
+  .courses_card-course, .courses_card-date {
+    font-size: 19px;
+  }
+  .edu_wrap-circle:before {
+    left: -241px;
+    top: 310px;
+    width: 530px;
+  }
+  .edu-card_title-line2 {
+    top: 330px;
+  }
+  .experience_wrap-icon {
+    top: 611px;
+  }
+  .experience_wrap-circle {
+    top: 600px;
+  }
+  .experience-line1 {
+    top: 702px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
