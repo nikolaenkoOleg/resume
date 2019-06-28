@@ -294,7 +294,6 @@ html {
 .experience_position {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 17px;
-  color: #333;
   padding-bottom: 3px;
   font-weight: bold;
 }
@@ -417,11 +416,7 @@ html {
   padding-left: 15px;
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 550px) {
-=======
-@media screen and (max-width: 320px) {
->>>>>>> ccfb736eef0357e6f2780f93c3156dec75d10626
   .left-side {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -462,26 +457,20 @@ html {
   .courses {
     margin-bottom: 40px;
   }
-<<<<<<< HEAD
   .courses_wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-left: -20px;
   }
   .courses_title {
     font-size: 22px;
-    text-align: center;
-=======
-  .courses_title {
-    font-size: 22px;
->>>>>>> ccfb736eef0357e6f2780f93c3156dec75d10626
   }
   .courses_card-title {
     font-size: 18px;
@@ -489,33 +478,8 @@ html {
   .courses_card-course, .courses_card-date {
     font-size: 19px;
   }
-<<<<<<< HEAD
-  .courses-card_list-item {
-    font-size: 19px;
-  }
-  .experience_position {
-    font-size: 17px;
-  }
-  .experience_list {
-    font-size: 18px;
-=======
-  .edu_wrap-circle:before {
-    left: -241px;
-    top: 310px;
-    width: 530px;
-  }
-  .edu-card_title-line2 {
-    top: 330px;
-  }
-  .experience_wrap-icon {
-    top: 611px;
-  }
-  .experience_wrap-circle {
-    top: 600px;
-  }
-  .experience-line1 {
-    top: 702px;
->>>>>>> ccfb736eef0357e6f2780f93c3156dec75d10626
+  .experience {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */

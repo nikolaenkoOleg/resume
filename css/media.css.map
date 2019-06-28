@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAEhC,AAAD,YAAM,CAAC;IACN,SAAS,EAAE,IAAI;GAAG;EAClB,AAAD,aAAO,CAAC;IACP,KAAK,EAAE,KAAK;IACZ,MAAM,EAAE,KAAK;IACb,KAAK,EAAE,IAAI;GAAG",
-    "sources": [
-        "../sass/media.sass"
-    ],
-    "names": [],
-    "file": "media.css"
-}
